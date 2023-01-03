@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Bookmarker</h1>
+            <hr>
+        </div>
+        <form>
+            <h2>Bookmarker your favorite sites</h2>
+            <div>
+                <label for="name">Site Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Bookmarker Name">
+            </div>
+            <div>
+                <label for="url">Site URL</label>
+                <input type="text" id="url" class="form-control" placeholder="website URL">
+            </div>
+            <button type="button" disabled class="btn btn-primary mt-3"  id="btndisplay">submit</button>
+        </form>
+        <div>
+            <input type="search" onkeyup = "search(this.value)" placeholder="search by bookmarker name" >
+        </div>
+        <hr>
+        <div>
+            <table class="table fs-5">
+                <thead>
+                    <tr>
+                        <th>Site Name</th>
+                        <th>Delete</th>
+                        <th>Visit</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <p>&copy; 2019 Bookmarker Inc.</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
